@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    background-color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+/* header */
+   .header{
+    width:100%;
+    height:20vh;
+    background-color: black;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+
+}
+#text{
+     color:whitesmoke;
+     font-size:18px;
+     
+     letter-spacing: 15px;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height:10vh;
+    background-color: brown;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#end{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+/* container main */
+.Container{
+    width:100%;
+    height:100vh;
+    background-color: blueviolet;
+    position: relative;
+}
+.container2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:10%;
+    left:20%;
+}
+
+.bigbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; 
+  }
+  .box {
+    width: 100px; 
+    height: 100px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+button{
+    width: 100%;
+    height: 100%;
+}
+/* player details */
+.playerdetails{
+    margin-left: 45px;
+    & button{
+        padding:5px;
+    }
+}
+.winnerDetails{
+    margin-top:50px;
+}
+
+.hide{
+    display: none;
+}
+.WinnerContainer{
+    background-color: brown;
+    border: 5px solid black;
+    border-radius: 10px;
+    position: absolute;
+   
+    z-index: 500;
+   
+    height: 100%;
+    width: 100%;
+    display: none;
+    opacity: 0.9;
+  
+    & .box{
+        margin: auto;
+        & button{
+            padding:5px;
+            border-radius: 5px;
+            background-color: darkkhaki;
+            height: 5rem;
+        }
+    }
+}
+
+@media (max-width: 600px) and (min-width:400px)
+{
+    #text , #texttings{
+        text-align: center;
+    }
+    .container2{
+        flex-direction: column;
+        & .playerdetails {
+            margin-left: 0;
+            margin-top:10%
+
+        }
+    }
+}
