@@ -1,0 +1,34 @@
+1)))))!operator converts the value into boolean.
+
+!!it first convert to false then true because twice !! sign.
+
+--------->
+The !! (double exclamation mark) operator in JavaScript is used to convert a value into a boolean.
+ It ensures that the value is explicitly treated as either true or false.
+
+How It Works:
+First ! (Negation):
+
+The first ! converts the value into its boolean opposite.
+Truthy values become false.
+Falsy values become true.
+Second ! (Negation):
+
+The second ! negates the result of the first !, 
+converting it back into a boolean that reflects the original value's truthiness.
+Truthy values become true.
+Falsy values become false.
+Examples:
+javascript
+Copy code
+console.log(!!"hello");  // true (non-empty string is truthy)
+console.log(!!0);        // false (0 is falsy)
+console.log(!!null);     // false (null is falsy)
+console.log(!!undefined); // false (undefined is falsy)
+console.log(!!123);      // true (non-zero number is truthy)
+console.log(!!"");       // false (empty string is falsy)
+
+2)))
+ <div className='WinnerContainer' style={{ display: Winner ? 'block' : 'none' }} >
+
+ if the winner is true then it shows block or none; that how the inline style with ternary operator works
