@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 html{
-    background-color: gray;
+    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
+body{
+    background-color: blueviolet;
+    height: 100%;
+}
 
 /* header */
    .header{
@@ -111,17 +114,26 @@ button{
     }
 }
 
-@media (max-width: 600px) and (min-width:400px)
+@media   (max-width: 500px) 
 {
+    
     #text , #texttings{
         text-align: center;
+        font-size: 11px;
+        letter-spacing: 2px;
     }
     .container2{
         flex-direction: column;
+        margin-top:5rem;
+        position:static;
         & .playerdetails {
             margin-left: 0;
             margin-top:10%
 
+        }
+        .WinnerContainer{
+            height: 100%;
+            border:0;
         }
     }
 }
